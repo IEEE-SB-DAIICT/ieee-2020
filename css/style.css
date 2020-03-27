@@ -6,6 +6,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
+  background-color: rgb(243, 243, 243);
 }
 
 a {
@@ -25,3 +26,22 @@ h5,
 h6 {
   font-family: "Raleway", sans-serif;
 }
+
+/* <!-- ======= Join IEEE Section ======= --> */
+.joinieee{
+    max-width: 90%;
+    align-content: center;
+    text-align: center;
+}
+.joinieee .col, .right-achievements, .whyjoin{
+background-color: white;
+
+}
+
+.whyjoin{
+    max-width: 100%;
+}
+
+.right-achievements{
+}
+/* End Join IEEE */
