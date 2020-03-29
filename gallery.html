@@ -24,11 +24,31 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <style>
+      .row {
+        margin: 15px;
+      }
+      @media (max-width: 576px) {
+        a {
+          margin: 15px;
+        }
+      }
+    </style>
   </head>
 
   <body>
     <!-- ======= Header ======= -->
-    <button type="button" class="mobile-nav-toggle d-lg-none"><i class="icofont-navigation-menu"></i></button>
+    <button type="button" class="mobile-nav-toggle d-lg-none">
+      <i class="icofont-navigation-menu"></i>
+    </button>
     <header id="header" class="fixed-top">
       <div class="container d-flex">
         <div class="logo mr-auto">
@@ -57,21 +77,96 @@
     </header>
     <!-- End Header -->
 
-    <!-- ======= Hero Section ======= -->
-    <section id="hero">
-      <div class="hero-container" data-aos="fade-up">
-        <h1>IEEE Student Branch</h1>
-        <h2>
-          DA-IICT
-        </h2>
-        <a href="#about" class="btn-get-started scrollto"
-          ><i class="bx bx-chevrons-down"></i
-        ></a>
-      </div>
-    </section>
-    <!-- End Hero -->
+    <br /><br /><br />
 
-  
+    <h1 align="center">Gallery</h1>
+    <div class="container">
+      <div class="row">
+        <a
+          href="./img/Gallery/DSC_0610-min.JPG"
+          data-toggle="lightbox"
+          data-gallery="gallery"
+          class="col-md-4"
+        >
+          <img src="./img/Gallery/DSC_0610-min.JPG" class="img-fluid rounded" />
+        </a>
+        <a
+          href="./img/Gallery/DSC_1005-min.JPG"
+          data-toggle="lightbox"
+          data-gallery="gallery"
+          class="col-md-4"
+        >
+          <img src="./img/Gallery/DSC_1005-min.JPG" class="img-fluid rounded" />
+        </a>
+        <a
+          href="./img/Gallery/IMG_0002-min.JPG"
+          data-toggle="lightbox"
+          data-gallery="gallery"
+          class="col-md-4"
+        >
+          <img src="./img/Gallery/IMG_0002-min.JPG" class="img-fluid rounded" />
+        </a>
+      </div>
+      <div class="row">
+        <a
+          href="./img/Gallery/IMG_0103-min.JPG"
+          data-toggle="lightbox"
+          data-gallery="gallery"
+          class="col-md-4"
+        >
+          <img src="./img/Gallery/IMG_0103-min.JPG" class="img-fluid rounded" />
+        </a>
+        <a
+          href="./img/Gallery/IMG_4879.JPG-min.jpeg"
+          data-toggle="lightbox"
+          data-gallery="gallery"
+          class="col-md-4"
+        >
+          <img
+            src="./img/Gallery/IMG_4879.JPG-min.jpeg"
+            class="img-fluid rounded"
+          />
+        </a>
+        <a
+          href="./img/Gallery/IMG_5982-min.JPG"
+          data-toggle="lightbox"
+          data-gallery="gallery"
+          class="col-md-4"
+        >
+          <img src="./img/Gallery/IMG_5982-min.JPG" class="img-fluid rounded" />
+        </a>
+      </div>
+
+      <div class="row">
+        <a
+          href="./img/Gallery/IMG_7617-min.jpeg"
+          data-toggle="lightbox"
+          data-gallery="gallery"
+          class="col-md-4"
+        >
+          <img
+            src="./img/Gallery/IMG_7617-min.jpeg"
+            class="img-fluid rounded"
+          />
+        </a>
+        <a
+          href="./img/Gallery/2.jpeg"
+          data-toggle="lightbox"
+          data-gallery="gallery"
+          class="col-md-4"
+        >
+          <img src="./img/Gallery/2.jpeg" class="img-fluid rounded" />
+        </a>
+        <a
+          href="./img/Gallery/about_img.JPG"
+          data-toggle="lightbox"
+          data-gallery="gallery"
+          class="col-md-4"
+        >
+          <img src="./img/Gallery/about_img.JPG" class="img-fluid rounded" />
+        </a>
+      </div>
+    </div>
 
     <!-- Footer  -->
     <div class="footer wow fadeInDown" id="sitemap">
@@ -166,7 +261,6 @@
       </div>
     </div>
 
-    
     <!-- <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
@@ -180,5 +274,12 @@
       crossorigin="anonymous"
     ></script>
     <script src="./js/copy.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+    <script>
+      $(document).on("click", '[data-toggle="lightbox"]', function(event) {
+        event.preventDefault();
+        $(this).ekkoLightbox();
+      });
+    </script>
   </body>
 </html>
