@@ -535,7 +535,7 @@ section {
 .achievements{
     /* padding-bottom: 0px !important; */
     /* margin-bottom: 0px !important; */
-    background: linear-gradient(rgba(103, 176, 209, 0.9), rgba(103, 176, 209, 0.6)), url("../img/achievement.jpeg") fixed center center;
+    background: linear-gradient(rgba(103, 176, 209, 0.9), rgba(103, 176, 209, 0.4)), url("../img/achievement.jpeg") fixed center center;
 }
 .achievements .icon-box {
     padding: 30px;
@@ -546,6 +546,7 @@ section {
     transition: all 0.3s ease-in-out;
     border-radius: 8px;
     z-index: 1;
+    margin-bottom: 10px;
   }
   
   .achievements .icon-box::before {
