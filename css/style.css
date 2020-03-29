@@ -6,7 +6,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
-  background-color: rgb(243, 243, 243);
+  background-color: rgba(243, 243, 243, 0.4);
 }
 
 a {
@@ -40,10 +40,18 @@ background-color: white;
 
 .whyjoin{
     /* max-width: 100%; */
+    width: 140% !important;
 }
 
 .right-achievements{
     max-width: 60%;
+    margin-left: auto;
+  }
 
+.padder1{
+  max-width: 0px !important;
 }
+
+
+
 /* End Join IEEE */

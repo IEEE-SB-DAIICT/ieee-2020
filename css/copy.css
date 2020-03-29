@@ -408,58 +408,78 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Featured
+# Services  # tiles just below main first section
 --------------------------------------------------------------*/
-.featured {
+.services{
+    padding-bottom: 0px !important;
+    margin-bottom: 0px !important;
+}
+.services .icon-box {
+    padding: 30px;
     position: relative;
-    z-index: 2;
-}
-
-.featured .icon-box {
-    padding: 40px 30px;
-    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.15);
-    border-radius: 10px;
+    overflow: hidden;
     background: #fff;
-    transition: all ease-in-out 0.3s;
-}
-
-.featured .icon-box i {
-    color: #e96b56;
-    font-size: 42px;
+    box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
+    transition: all 0.3s ease-in-out;
+    border-radius: 8px;
+    z-index: 1;
+  }
+  
+  .services .icon-box::before {
+    content: '';
+    position: absolute;
+    background: white;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 100%;
+    transition: all 0.3s;
+    z-index: -1;
+  }
+  
+  .services .icon-box:hover::before {
+    background: #67b0d1;
+    top: 0;
+    border-radius: 0px;
+  }
+  
+  .services .icon {
     margin-bottom: 15px;
-    display: block;
-}
-
-.featured .icon-box h3 {
+  }
+  
+  .services .icon i {
+    font-size: 48px;
+    line-height: 1;
+    color: #67b0d1;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .services .title {
     font-weight: 700;
     margin-bottom: 15px;
-    font-size: 20px;
-}
-
-.featured .icon-box h3 a {
-    color: #545454;
-    transition: 0.3s;
-}
-
-.featured .icon-box p {
-    color: #545454;
-    line-height: 24px;
-    font-size: 14px;
+    font-size: 18px;
+  }
+  
+  .services .title a {
+    color: #111;
+  }
+  
+  .services .description {
+    font-size: 15px;
+    line-height: 28px;
     margin-bottom: 0;
-}
-
-.featured .icon-box:hover {
-    background: #e96b56;
-}
-
-.featured .icon-box:hover i,
-.featured .icon-box:hover h3 a,
-.featured .icon-box:hover p {
+  }
+  
+  .services .icon-box:hover .title a, .services .icon-box:hover .description {
     color: #fff;
-}
+  }
+  
+  .services .icon-box:hover .icon i {
+    color: #fff;
+  }
 
 /*--------------------------------------------------------------
-# About
+# About  #joinieee
 --------------------------------------------------------------*/
 .about .content h3 {
     font-weight: 600;
@@ -491,9 +511,17 @@ section {
 }
 
 .about p{
-    font-size: 19px;
+    font-size: 22px;
 }
 
 .about p, .about h3{
     text-align: center;
+}
+
+#joinieee{
+    padding-top: 20px;
+}
+
+#otherbenefits{
+    padding-top: 70px;
 }
