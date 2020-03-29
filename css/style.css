@@ -52,6 +52,42 @@ background-color: white;
   max-width: 0px !important;
 }
 
-
-
 /* End Join IEEE */
+
+
+/* Summer school section */
+#summerschool{
+  max-width: 100%;
+  overflow: hidden;
+}
+canvas {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+#home {
+  max-width: 100%;
+  min-height: 100vh;
+  color: white;
+  margin-top: -60px;
+  font-size: 40px;
+}
+
+.home_title {
+  max-width: 100%;
+  /* padding-top: 10%; */
+  font-size: 70px;
+  color: white;
+  margin-top: -700px;
+}
+.home_topic {
+  max-width: 100%;
+  font-size: 60px;
+  color: white;
+}
+.small_span {
+  max-width: 100%;
+  font-size: 20px;
+}
+/* end of Summer school  */
