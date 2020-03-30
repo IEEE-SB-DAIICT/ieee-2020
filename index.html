@@ -70,8 +70,7 @@
       id="bgndVideo"
       class="player"
       data-property="{videoURL:'https://youtu.be/GL0rbxB9Lqg',containment:'#hero',autoPlay:true, mute:true, startAt:120, opacity:1, showYTLogo:false, showControls:false}"
-    >
-    </div>
+    ></div>
     <!-- ======= Hero Section ======= -->
     <section id="hero">
       <div class="hero-container" data-aos="fade-up">
@@ -629,8 +628,10 @@
     <script>
       /* for Executing Video Background */
       jQuery(function() {
-        jQuery("#bgndVideo").YTPlayer();
+        window.setTimeout(function() {
+          jQuery("#bgndVideo").YTPlayer();
+        }, 2500);
       });
-    </script>
+      </script>
   </body>
 </html>
