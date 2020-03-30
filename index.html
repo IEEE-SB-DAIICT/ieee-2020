@@ -14,6 +14,7 @@
       href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/jquery.mb.YTPlayer.min.css" />
     <link rel="stylesheet" href="./css/icofont.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/animate.css" />
@@ -65,6 +66,13 @@
     </header>
     <!-- End Header -->
 
+    <div
+      id="bgndVideo"
+      class="player"
+      data-property="{videoURL:'https://youtu.be/GL0rbxB9Lqg',containment:'#hero',autoPlay:true, mute:true, startAt:20, opacity:1, showYTLogo:false, showControls:false}"
+    >
+      My video
+    </div>
     <!-- ======= Hero Section ======= -->
     <section id="hero">
       <div class="hero-container" data-aos="fade-up">
@@ -617,6 +625,13 @@
       crossorigin="anonymous"
     ></script>
     <script src="./js/copy.js"></script>
+    <script src="./js/jquery.mb.YTPlayer.min.js"></script>
     <script src="./js/summer.js"></script>
+    <script>
+      /* for Executing Video Background */
+      jQuery(function() {
+        jQuery("#bgndVideo").YTPlayer();
+      });
+    </script>
   </body>
 </html>
