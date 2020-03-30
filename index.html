@@ -65,11 +65,11 @@
       </div>
     </header>
     <!-- End Header -->
-
+      <!-- GL0rbxB9Lqg -->
     <div
       id="bgndVideo"
       class="player"
-      data-property="{videoURL:'https://youtu.be/GL0rbxB9Lqg',containment:'#hero',autoPlay:true, mute:true, startAt:120, opacity:1, showYTLogo:false, showControls:false}"
+      data-property="{videoURL:'https://youtu.be/5ntt_5MM8Uw',containment:'#hero',autoPlay:true, mute:true, startAt:23, opacity:1, showYTLogo:false, showControls:false}"
     ></div>
     <!-- ======= Hero Section ======= -->
     <section id="hero">
@@ -630,7 +630,8 @@
       jQuery(function() {
         window.setTimeout(function() {
           jQuery("#bgndVideo").YTPlayer();
-        }, 7000);
+          jQuery("#bgndVideo").YTPSetPlaybackRate(1.50);
+        }, 2000);
       });
       </script>
   </body>
