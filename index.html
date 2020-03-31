@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>IEEE Student Branch | DAIICT</title>
+    <title>IEEE Student Branch | DA-IICT</title>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -35,7 +35,7 @@
     <button type="button" class="mobile-nav-toggle d-lg-none">
       <i class="icofont-navigation-menu"></i>
     </button>
-    <header id="header" class="fixed-top">
+    <header id="header" class="fixed-top animated fadeInDown delay-1s">
       <div class="container d-flex">
         <div class="logo mr-auto">
           <h1 class="text-light">
@@ -67,7 +67,7 @@
 
     <!-- ======= Hero Section ======= -->
     <section id="hero">
-      <div class="hero-container" data-aos="fade-up">
+      <div class="hero-container animated fadeIn delay-1s" data-aos="fade-up">
         <h1>IEEE Student Branch</h1>
         <h2>
           DA-IICT
@@ -78,18 +78,20 @@
       </div>
     </section>
     <!-- End Hero -->
-
+    <a href="#header" class="btn-get-started scrollto backtotop"
+      ><i class="bx bx-chevrons-up"></i
+    ></a>
     <!-- ======= Services Section ======= -->
     <section id="services" class="services">
       <div class="container">
         <div class="section-title" data-aos="fade-in" data-aos-delay="100">
-          <h2>Updates</h2>
+          <h2 class="animated pulse infinite">Updates</h2>
           <p>
             Latest updates from IEEE Student Branch, DA-IICT
           </p>
         </div>
 
-        <div class="row">
+        <div class="row wow fadeInUp">
           <div
             class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0"
           >
@@ -146,7 +148,7 @@
     <!-- End Services Section -->
 
     <!-- ======= Join IEEE Section ======= -->
-    <section id="joinieee" class="joinieee container">
+    <section id="joinieee" class="joinieee container wow fadeInUp">
       <div class="row">
         <div class="col whyjoin">
           <div class="row">
@@ -156,7 +158,11 @@
                 <div class="container">
                   <div class="row">
                     <div class="col-lg-6">
-                      <img src="./img/about_img-700kb.jpg" class="img-fluid" alt="" />
+                      <img
+                        src="./img/about_img-700kb.jpg"
+                        class="img-fluid"
+                        alt=""
+                      />
                     </div>
                     <div class="col-lg-6 pt-4 pt-lg-0 content">
                       <h3>
@@ -201,7 +207,11 @@
                       </p>
                     </div>
                     <div class="col-lg-6">
-                      <img src="./img/about_2-500kb.jpg" class="img-fluid" alt="" />
+                      <img
+                        src="./img/about_2-500kb.jpg"
+                        class="img-fluid"
+                        alt=""
+                      />
                     </div>
                   </div>
                 </div>
@@ -344,7 +354,7 @@
     </section>
 
     <!-- Summer school section -->
-    <section id="summerschool">
+    <section id="summerschool" class="wow fadeInUp">
       <div class="text-center" id="home">
         <canvas id="c"></canvas>
         <br />
@@ -364,7 +374,7 @@
     <!-- End of Summer School -->
 
     <!-- ======= Achievements Section ======= -->
-    <section id="achievements" class="achievements">
+    <section id="achievements" class="achievements wow fadeInUp">
       <div class="container">
         <div class="section-title" data-aos="fade-in" data-aos-delay="100">
           <h2>Achievements</h2>
@@ -620,5 +630,10 @@
     <script src="./js/copy.js"></script>
     <script src="./js/summer.js"></script>
     <script src="./js/easing.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/wow.js"></script>
+    <script>
+      new WOW().init();
+    </script>
   </body>
 </html>
