@@ -288,14 +288,22 @@
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
-#hero {
+.hero {
     width: 100%;
     height: 100vh;
-    /* background: url("../img/back1.JPG") top center; */
-    background: linear-gradient(rgba(103, 176, 209, 0.281), rgba(103, 176, 209, 0.3)), url("../img/Gallery/DSC_0610-200kb.jpg") fixed center center;
+    /*background: url("../img/back1.JPG") top center;*/
+    background: fixed center center;
+    /*background-image: url("../img/Gallery/DSC_0610-200kb.jpg");*/
+    /*background: linear-gradient(rgba(103, 176, 209, 0.281), rgba(103, 176, 209, 0.3)), url("../img/Gallery/DSC_0610-200kb.jpg") fixed center center;*/
+    /*animation: imageAnimation 18s linear infinite 0s;*/
     background-size: cover;
-    position: relative;
-    /* opacity:0.8; */
+    -webkit-transition: background-image 1s linear;
+    -moz-transition: background-image 1s linear;
+    -o-transition: background-image 1s linear;
+    -ms-transition: background-image 1s linear;
+    transition: background-image 1s linear;
+    position : relative;
+    /*opacity:0.8;*/
     font-family: 'Roboto', sans-serif;
 }
 

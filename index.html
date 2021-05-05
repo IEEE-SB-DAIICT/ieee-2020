@@ -65,8 +65,8 @@
             <li><a href="./gallery.html">Gallery</a></li>
             <li><a href="./team.html">EXECOMM</a></li>
             <li><a href="./grantapp.html">Grant App</a></li>
-            <li><a href="./contact.html">Contact</a></li>
             <li><a href="./members.html">IEEE Members</a></li>
+            <li><a href="./contact.html">Contact</a></li>
             <li><a href="./history.html">History</a></li>
           </ul>
         </nav>
@@ -76,7 +76,7 @@
     <!-- End Header -->
 
     <!-- ======= Hero Section ======= -->
-    <section id="hero">
+    <section id="hero" class="hero">
       <div class="hero-container animated fadeIn delay-1s" data-aos="fade-up">
         <h1>IEEE Student Branch</h1>
         <h2>
@@ -855,4 +855,20 @@
       new WOW().init();
     </script>
   </body>
+
+  <script>
+    //Array of images which you want to show: Use path you want.
+    var images=["img/Gallery/DSC_0610-200kb.jpg","img/Gallery/18-min.JPG","img/Gallery/14-min.jpg","img/Gallery/7-min.jpg","img/Gallery/5-min.jpg"];
+    var nextimage=0;
+    doSlideshow();
+    function doSlideshow(){
+      if(nextimage>=images.length){nextimage=0;}
+      $('.hero').css('background-image','url('+images[nextimage++]+')');
+      //$('.hero').fadeIn(2000,function(){
+        //setTimeout(doSlideshow,5000);
+      //});
+      setTimeout(doSlideshow,7000);
+    }
+  </script>
+
 </html>
