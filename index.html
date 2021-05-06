@@ -65,8 +65,8 @@
             <li><a href="./gallery.html">Gallery</a></li>
             <li><a href="./team.html">EXECOMM</a></li>
             <li><a href="./grantapp.html">Grant App</a></li>
-            <li><a href="./contact.html">Contact</a></li>
             <li><a href="./members.html">IEEE Members</a></li>
+            <li><a href="./contact.html">Contact</a></li>
             <li><a href="./history.html">History</a></li>
           </ul>
         </nav>
@@ -76,7 +76,7 @@
     <!-- End Header -->
 
     <!-- ======= Hero Section ======= -->
-    <section id="hero">
+    <section id="hero" class="hero">
       <div class="hero-container animated fadeIn delay-1s" data-aos="fade-up">
         <h1>IEEE Student Branch</h1>
         <h2>
@@ -169,7 +169,7 @@
           >
             <!-- event 1 -->
             <div id="event1" class="col-lg-4">
-              <div class="card text-center event-card my-3" style="">
+              <div class="card text-center event-card my-3">
                 <img
                   src="./img/summer_school21.jpeg"
                   class="card-img-top border-dark"
@@ -234,7 +234,7 @@
           >
             <!-- event 1 -->
             <div id="event1" class="col-lg-4">
-              <div class="card text-center event-card my-3" style="">
+              <div class="card text-center event-card my-3">
                 <img
                   src="./img/webinar-s1.png"
                   class="card-img-top border-dark"
@@ -264,7 +264,7 @@
             <!-- end of event1 -->
             <!-- event 1 -->
             <div id="event1" class="col-lg-4">
-              <div class="card text-center event-card my-3" style="">
+              <div class="card text-center event-card my-3">
                 <img
                   src="./img/webinar-s2.png"
                   class="card-img-top border-dark"
@@ -293,7 +293,7 @@
             <!-- end of event1 -->
             <!-- event 1 -->
             <div id="event1" class="col-lg-4">
-              <div class="card text-center event-card my-3" style="">
+              <div class="card text-center event-card my-3">
                 <img
                   src="./img/PosterFinalHiteshHOST.jpg"
                   class="card-img-top border-dark"
@@ -627,7 +627,18 @@
         <br />
         <br />-->
 
-        <a href="http://ifest.daiict.ac.in" target="blank"><img class="home_title" src="img/VirtualVoyageWhite.png" style="width: 1000px;height:auto;" /></a>
+        <p class="home_title">Summer School '21</p>
+        <h1>
+          Data Science
+          <div class="small_span">and</div>
+          Machine Learning
+        </h1> 
+        <br />
+        <h3>4<sup>th</sup> - 6<sup>th</sup> & 12<sup>th</sup> - 13<sup>th</sup> June, 2021</h3>
+        <div class="small_span">(5 days workshop)</div>
+        <br>
+        <a href="https://ieee-sb-daiict.github.io/summer-school-21/" id="registerbtn" target="_blank">Register</a>
+        <br>
         
         <!--<h1 style="color: white;">
               Virtual Voyage
@@ -886,4 +897,20 @@
       new WOW().init();
     </script>
   </body>
+
+  <script>
+    //Array of images which you want to show: Use path you want.
+    var images=["img/Gallery/DSC_0610-200kb.jpg","img/Gallery/18-min.JPG","img/Gallery/14-min.jpg","img/Gallery/7-min.jpg","img/Gallery/5-min.jpg"];
+    var nextimage=0;
+    doSlideshow();
+    function doSlideshow(){
+      if(nextimage>=images.length){nextimage=0;}
+      $('.hero').css('background-image','url('+images[nextimage++]+')');
+      //$('.hero').fadeIn(2000,function(){
+        //setTimeout(doSlideshow,5000);
+      //});
+      setTimeout(doSlideshow,7000);
+    }
+  </script>
+
 </html>

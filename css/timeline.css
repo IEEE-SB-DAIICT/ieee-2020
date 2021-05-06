@@ -93,19 +93,20 @@ body {
     -webkit-box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
     -moz-box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
     box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+    float: right;
   }
   
   .direction-r .flag {
     -webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
     -moz-box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
     box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+    float: left;
   }
   
-  .direction-l .flag:before,
-  .direction-r .flag:before {
+  .direction-l .flag:before, .direction-r .flag:before {
     position: absolute;
     top: 50%;
-    right: -40px;
+    right: -36px;
     content: ' ';
     display: block;
     width: 12px;
@@ -118,7 +119,7 @@ body {
   }
   
   .direction-r .flag:before {
-    left: -40px;
+    left: -36px;
   }
   
   .direction-l .flag:after {
